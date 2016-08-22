@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых макетов Дизайн-студии «Nёrd's»</title>
+    <link rel="stylesheet" href="css/symbols-nerds.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  	<header class="site-header">
+  		<div class="container">
+  			<div class="header-top-row clearfix">
+					<div class="page-logo">
+						<a href="index.html" title="Главная">
+							<img src="img/logo.png" alt="Nerd's design studio" width="139" height="56">
+						</a>
+					</div>
+					<nav class="main-navigation">
+						<ul>
+	            <li>
+	              <a href="index.html">Студия</a>
+	            </li>
+	            <li>
+	              <a href="#">Клиенты</a>
+	            </li>
+	            <li class="active">
+	              <a href="#">Магазин</a>
+	            </li>
+	            <li>
+	              <a href="#">Контакты</a>
+	            </li>
+          		<li class="cart-block">
+	              <a href ="#" class="cart">Корзина</a>
+	            </li>
+          	</ul>
+					</nav>
+  			</div>
+				<div class="store-heading">
+					<h1>Добро пожаловать в магазин <br>готовых макетов</h1>
+				</div>
+  		</div>
+  	</header>
+		
+		<main class="main-store">
+			<div class="container clearfix">
+				<div class="left-column-store">
+					<form class="filter-tools" action="/" method="get">
+						<fieldset>
+							<legend>Стоимость:</legend>
+							<div class="price-range">
+								<div class="range-groove">
+									<div class="selected-range">
+										<div class="range-handle bottom-price-handle"></div>
+										<div class="range-handle top-price-handle"></div>
+									</div>
+								</div>
+							</div>
+							<table class="range-wrapper">
+								<tr>
+									<td>
+										ОТ
+										<input type="text" name="min-range" id="min-range" value="0" maxlength="6" /> <!-- type="number" or hard formatting? -->
+									</td>
+									<td>
+										ДО
+										<input type="text" name="max-range" id="max-range" value="15000" maxlength="6" />
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+						<fieldset>
+							<legend>Сетка:</legend>
+								<ul class="grid-selection">
+									<li>
+										<input type="radio" name="grid" id="adaptive" />
+										<label for="adaptive">Адаптивная</label>
+									</li>
+									<li>
+										<input type="radio" name="grid" id="fixed" />
+										<label for="fixed">Фиксированная</label>
+									</li>
+									<li>
+										<input type="radio" name="grid" id="fluid" />
+										<label for="fluid">Резиновая</label>
+									</li>
+								</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Особенности:</legend>
+							<ul class="feature-selection">
+									<li>
+										<input type="checkbox" name="slider" id="slider" checked />
+										<label for="slider">Слайдер</label>
+									</li>
+									<li>
+										<input type="checkbox" name="benefits" id="benefits" />
+										<label for="benefits">Блок преимуществ</label>
+									</li>
+									<li>
+										<input type="checkbox" name="news" id="news" checked />
+										<label for="news">Новости</label>
+									</li>
+									<li>
+										<input type="checkbox" name="gallery" id="gallery" />
+										<label for="gallery">Галерея</label>
+									</li>
+									<li>
+										<input type="checkbox" name="basket" id="basket" />
+										<label for="basket">Корзина</label>
+									</li>
+								</ul>
+						</fieldset>
+						<button type="submit" class="btn btn-grey filter-show">Показать</button>
+					</form>
+				</div>
+				<div class="right-column-store">
+					<div class="sort-tools clearfix">
+						<span class="sort-by">Сортировать:</span>
+						<a href="#">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По функционалу</a>
+						<span class="sort-direction">
+							<a href="#" class="active" title="по убыванию">&#x25bc;</a>
+							<a href="#" title="по возрастанию">&#x25b2;</a>
+						</span>
+					</div>
+
+					<div class="templates clearfix">						
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/01-aviator.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Aviator</h5>
+									<p class="template-description">Одностраничный макет с авторским дизайном</p>
+									<a class="btn btn-red template-price">8000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/02-sunset.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Sunset</h5>
+									<p class="template-description">Интернет-магазин с личным кабинетом</p>
+									<a class="btn btn-red template-price">10000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/03-forte.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Forte</h5>
+									<p class="template-description">Отличный макет для личного блога</p>
+									<a class="btn btn-red template-price">5000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+							<img src="img/templates/04-marquee.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Modern Organic Thai</h5>
+									<p class="template-description">Сайт для ресторана быстрого питания</p>
+									<a class="btn btn-red template-price">12000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/05-avenue.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Avenue</h5>
+									<p class="template-description">Макет для блога о путешествиях</p>
+									<a class="btn btn-red template-price">8000 р.</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="template-frame">
+							<div class="template-header">
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+								<span class="template-dot"></span>
+							</div>
+							<div class="template-main">
+								<img src="img/templates/06-dovetail.png">
+								<div class="template-overlay">
+									<h5 class="template-name">Dovetail</h5>
+									<p class="template-description">Интернет-магазин с галереей товаров</p>
+									<a class="btn btn-red template-price">14000 р.</a>
+								</div>
+							</div>
+						</div>
+
+					</div>					
+				</div>
+			</div>
+			<div class="container">
+				<div class="pagination">
+					<!-- <a href="#" class="disabled">Предыдущая</a> -->
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#" class="next-page">Следующая</a>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="footer-top">
+				<div id="map" class="map-overlay"></div>
+				<div class="container"">
+					<div class="contact-details">
+						<h4 class="contact-name">NЁRDS DESIGN STUDIO</h4>
+						<p class="contacts-text">
+							191186, Санкт-Петербург, <br>
+							ул. Б. Конюшенная, д. 19/8
+						</p>
+						<p class="contacts-text">
+							тел. +7 (812) 275-75-75
+						</p>
+						<a href="#" class="btn btn-red write-us">Напишите нам</a> <!-- Нужно ли завернуть в <p> здесь и выше? -->
+					</div>
+				</div>
+			</div>
+				
+					
+			<div class="footer-bottom container clearfix">
+				<div class="social-buttons-block">
+					<a href="#" class="social-btn"><span class="icon-vk"></span></a>
+          			<a href="#" class="social-btn"><span class="icon-facebook"></span></a>
+         			<a href="#" class="social-btn"><span class="icon-instagramm"></span></a>
+				</div>
+				<div class="footer-friends">
+					<p class="friends-heading">
+						Давайте дружить: это выгодно!
+					</p>
+					<p class="friends-discount">
+						Скидка 10% для друзей из социальных сетей
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<form class="main-form" action="" method="post">
+				<div class="main-form-block clearfix">
+					<div class="main-form-left">
+						<label for="name">Ваше имя:</label><br>
+						<input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="main-form-right">
+						<label for="email">Ваш e-mail:</label><br>
+						<input type="email" name="email" id="email" placeholder="для отправки ответа">
+					</div>
+				</div>
+
+				<label for="message">Текст письма:</label><br>
+				<textarea placeholder="В свободной форме" name="message" id="message"></textarea>
+
+				<button class="btn btn-red main-form-button" type="submit">Отправить</button>
+			</form>
+			
+		</div>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap,
+    		myPlacemark;
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [59.9392, 30.32],
+            zoom: 17,
+            controls: ["zoomControl", "fullscreenControl"]
+        });
+        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], { hintContent: 'NЁRDS DESIGN STUDIO', balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8' }, {
+        	iconLayout: 'default#image',
+        	iconImageHref: 'img/nerds_map_mark.svg',
+        	iconImageSize: [231, 190],
+        	iconImageOffset: [-50, -190]
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+
+        myMap.behaviors.disable('scrollZoom');
+
+    }
+	</script>
+	<script type="text/javascript">
+		var modalOpen = document.querySelector(".write-us");
+		var popup = document.querySelector(".modal-content");
+		var modalClose = popup.querySelector(".modal-content-close");
+		var personName = popup.querySelector('[name="name"]');
+		var personEmail = popup.querySelector('[name="email"]');
+		var message = popup.querySelector('textarea');
+		var form = popup.querySelector('form');
+		var savedName = localStorage.getItem("personName");
+		var savedEmail = localStorage.getItem("personEmail");
+
+		modalOpen.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("modal-content-show");
+			
+			if (savedName) {
+				personName.value = savedName;
+				personEmail.focus();
+				if (savedEmail) {
+					personEmail.value = savedEmail;
+					message.focus();
+				}
+			} else {
+				personName.focus();
+			};
+
+			return false;
+		});
+
+		modalClose.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			popup.classList.remove("modal-error");
+		});
+
+		form.addEventListener("submit", function(event) {
+			popup.classList.remove("modal-error");
+			if (!personName.value || !personEmail.value || !message.value) {
+				event.preventDefault();
+				popup.classList.remove("modal-error");
+				popup.offsetWidth = popup.offsetWidth; //triggering reflow to make the animatio work again
+				popup.classList.add("modal-error"); //как исправить повторный неправильный ввод?
+				
+				//alert('Error!');
+			} else {
+				localStorage.setItem("personName", personName.value);
+				localStorage.setItem("personEmail", personEmail.value);
+			}
+		});
+
+		window.addEventListener("keydown", function(event) {
+			if (event.keyCode === 27) {
+				if (popup.classList.contains("modal-content-show")) {
+					popup.classList.remove("modal-content-show");
+				}
+			}
+		});
+
+	</script>
+
+  </body>
+</html>

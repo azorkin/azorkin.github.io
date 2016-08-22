@@ -1,0 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  background: -webkit-linear-gradient(297deg, #151515 5px, transparent 5px) 0 5px,
+              -webkit-linear-gradient(117deg, #151515 5px, transparent 5px) 10px 0px,
+              -webkit-linear-gradient(297deg, #222 5px, transparent 5px) 0px 10px,
+              -webkit-linear-gradient(117deg, #222 5px, transparent 5px) 10px 5px,
+              -webkit-linear-gradient(left, #1b1b1b 10px, transparent 10px),
+              -webkit-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background: -o-linear-gradient(297deg, #151515 5px, transparent 5px) 0 5px,
+              -o-linear-gradient(117deg, #151515 5px, transparent 5px) 10px 0px,
+              -o-linear-gradient(297deg, #222 5px, transparent 5px) 0px 10px,
+              -o-linear-gradient(117deg, #222 5px, transparent 5px) 10px 5px,
+              -o-linear-gradient(left, #1b1b1b 10px, transparent 10px),
+              -o-linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+              linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+              linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+              linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+              linear-gradient(to right, #1b1b1b 10px, transparent 10px),
+              linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);;
+              background-color: #131313;
+              background-size: 20px 20px;
+  font-family: "Open Sans", Arial, Tahoma, sans-serif;
+  line-height: 1.15;
+}
+.site-wrapper {
+  box-sizing: border-box;
+  width: 960px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: linen;
+}
+.actions__option {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.portfolio {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.regards {
+  font-style: italic;
+  margin-top: 30px;
+}
+.postscriptum {
+  font-size: x-small;
+}
