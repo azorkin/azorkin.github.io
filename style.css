@@ -25,16 +25,69 @@ body {
               background-color: #131313;
               background-size: 20px 20px;
   font-family: "Open Sans", Arial, Tahoma, sans-serif;
-  line-height: 1.15;
+  line-height: 1.2em;
 }
+/* ============ GENERAL STYLES ============ */
+h1 {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 2px #000;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+table {
+  border-collapse: collapse;
+  border: none;
+}
+tr, td {
+  border: none;
+  vertical-align: top;
+}
+td {
+  padding: 5px;
+}
+ul {
+  padding-left: 1.5em;
+}
+li:not(:last-child) {
+  margin-bottom: .2em;
+}
+
 .site-wrapper {
   box-sizing: border-box;
-  width: 960px;
+  width: 320px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 10px 30px;
-  background-color: linen;
+  padding: 10px;
+  background-color: rgba(250,240,230,1);
 }
+@media (min-width: 640px) {
+  .site-wrapper {
+    width: 640px;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 960px) {
+  .site-wrapper {
+    width: 960px;
+    padding: 10px 30px;
+  }
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .actions__option {
   margin-top: 6px;
   margin-bottom: 6px;
@@ -49,4 +102,93 @@ body {
 }
 .postscriptum {
   font-size: x-small;
+}
+
+/* ============ CV Page ============ */
+.cv__general-wrapper {
+  position: relative;
+}
+.cv__general-info {
+  width: 100%;
+  float: none;
+  padding-top: 260px;
+}
+.cv__photo-wrapper {
+  width: 100%;
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.cv__name {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .cv__general-info {
+    width: 75%;
+    float: left;
+    padding-top: 0;
+  }
+  .cv__photo-wrapper {
+    position: static;
+    width: 25%;
+    float: right;
+  }
+}
+.cv__main-photo {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.cv__education-table, 
+.cv__experience-table,
+.cv__education-table tr,
+.cv__experience-table tr,
+.cv__education-table td,
+.cv__experience-table td {
+  display: block;
+  width: 100%;
+}
+.cv__education-table tr,
+.cv__experience-table tr {
+  border-bottom: dotted 1px black;
+}
+.cv__education-table tr:last-child,
+.cv__experience-table tr:last-child {
+  border-bottom: none;
+}
+.cv__education-table td:first-child,
+.cv__experience-table td:first-child {
+  font-style: italic;
+  font-size: larger;
+}
+@media (min-width: 640px) {
+  .cv__education-table, 
+  .cv__experience-table {
+    display: table;
+  }
+  .cv__education-table tr,
+  .cv__experience-table tr {
+    display: table-row;
+    border: none;
+    width: auto;
+  }
+  .cv__education-table td,
+  .cv__experience-table td {
+    display: table-cell;
+    width: auto;
+  }
+}
+
+@media print {
+  a[href^=http]:after {content:" <" attr(href) ">";
+  body {
+    background: none;
+    color: black;
+  }
+  .site-wrapper {
+    width: 100%;
+  }
 }
