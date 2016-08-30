@@ -183,7 +183,6 @@ li:not(:last-child) {
 }
 
 @media print {
-  a[href^=http]:after {content:" <" attr(href) ">";
   body {
     background: none;
     color: black;
@@ -191,4 +190,7 @@ li:not(:last-child) {
   .site-wrapper {
     width: 100%;
   }
+  a[href^=http]:after {
+    content:" <" attr(href) ">"
+  }  
 }
