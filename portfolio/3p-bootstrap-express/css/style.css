@@ -1,0 +1,40 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.jumbotron {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media (min-width: 992px) {
+  .cta-button-holder {
+    padding-top: 78px; /*to correct depending on left block height*/
+  }
+}
+@media (min-width: 1200px) {
+  .cta-button-holder {
+    padding-top: 45px; /*to correct depending on left block height*/
+  }
+}
+.page-heading {
+  margin-bottom: 20px;
+}
+.topic-block {
+  padding-bottom: 20px;
+}
+.news-wrapper {
+  padding-top: 20px;
+}
+.news-wrapper .media {
+  margin-bottom: 30px;
+}
+.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.page-footer p {
+  margin: 0;
+}
+.pagination-wrapper {
+  text-align: center;
+}
