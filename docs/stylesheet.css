@@ -904,7 +904,7 @@ h2.price {
   transition: all 500ms linear;
 }
 .rating_block_stars_hover .fa{
-	 background: #303030;
+	 background: #e2e2e2;
 }
 .rating_block_stars_hover.active{
 	width: 0;
