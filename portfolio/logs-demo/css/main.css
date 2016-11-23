@@ -1,0 +1,224 @@
+html, body {
+  font-family: 'Jura', sans-serif;
+  font-weight: normal;
+
+  background-color: #002533;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.icon {
+  font: inherit;
+  position: relative;
+}
+.icon:before {
+  content: '';
+  font: inherit;
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  height: 19px;
+  width: 19px;
+  background: url('../img/icons/globe.png') center center no-repeat;
+
+}
+.country-block {
+  min-height: 40px;
+  background-color: #002533;
+  color: #fff;
+  padding: 10px 0;
+}
+.country-block p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: right;
+  vertical-align: top;
+
+}
+
+/*Navigation block*/
+.nav-block {
+  min-height: 60px;
+  background-color: #073d52;
+  color: #fff;
+}
+
+.contacts__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  text-align: right;
+}
+.contacts__list li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+}
+.contacts__list li:not(:last-child) {
+  margin-right: 20px;
+}
+.contacts__list a {
+  position: relative;
+  display: block;
+  padding: 20px 0 20px 28px;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-decoration: none;
+}
+.contacts__list a:hover {
+  text-decoration: underline;
+}
+.contacts__list a:before {
+  content: '';
+  
+  position: absolute;
+  left: -5px;
+  height: 20px;
+  width: 23px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.contacts__list .contacts__phone:before {
+  background-image: url('../img/icons/phone.png');
+}
+.contacts__list .contacts__email:before {
+  background-image: url('../img/icons/mail.png');
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.main-navbar {
+  color: #fff;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    margin-left: 10px;
+  }
+}
+.main-nav > li > a {
+  padding: 20px 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.main-nav > li > a:hover,
+.main-nav > li > a:active {
+  background-color: inherit;
+  text-decoration: underline;
+}
+.main-nav > li.active > a {
+  color: #3aaa35
+}
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  padding-right: 201px;
+  text-indent: -9999px;
+  position: relative;
+}
+.navbar-brand img {
+  position: absolute;
+  top: -32px;
+  z-index: 1000;
+}
+
+/*BOOTSTRAP MAIN CAROUSEL*/
+.promo-block {
+  min-height: 650px;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel {
+  /*height: 650px;*/
+}
+.item {
+  height: 650px
+}
+#carousel-main .image-holder {
+  width: 100%;
+  height: 100%;
+  background: #002533 center center no-repeat;
+}
+#carousel-main .image-holder-1 {
+  background-image: url('../img/slide_1.png');
+}
+#carousel-main .image-holder-2 {
+  background-image: url('../img/slide_2.png');
+}
+#carousel-main .image-holder-3 {
+  background-image: url('../img/slide_3.png');
+}
+
+.carousel-caption {
+  top: 160px;
+  left: 0;
+  bottom: auto;
+  right: 0;
+  
+}
+.slide__caption-wrapper {
+  width: 42.735043%;
+  border-radius: 5px;
+}
+.slide__text {
+  padding: 20px 15px;
+  background-color: #a0a0a0;
+  color: #fff;
+  text-align: left;
+  text-shadow: none;
+  min-height: 265px;
+}
+.slide__text h2 {
+  margin: 0 0 15px;
+
+  font-size: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.slide__text p {
+  margin: 0 0 10px;
+
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.slide__button {
+  padding: 16px 15px 17px;
+  background-color: #073d52;
+  color: #fff;
+}
+.slide__button .btn-slider {
+  width: 170px;
+
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+
+  padding: 9px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.slide__button .btn-slider:hover,
+.slide__button .btn-slider:active {
+  background-color: #fff;
+  color: #073d52;
+}
