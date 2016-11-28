@@ -2,8 +2,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 
-  /*Remember to apply to media max-width!!!*/
-
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.025em;
@@ -53,6 +51,11 @@ h1, h2, h3, h4 {
   color: #fff;
   border-color: #fff;
 }
+.btn-max-350 {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*HEADER BLOCK*/
 .site-header {
   min-height: 500px; /*temporary*/
@@ -67,15 +70,6 @@ h1, h2, h3, h4 {
   width: 100%;
   background-color: rgba(27,62,111,.7);
 }
-
-/*.top-wrapper__overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
-}*/
 .top-contacts-block {
   border-bottom: 1px solid #137aa1;
 }
@@ -83,7 +77,6 @@ h1, h2, h3, h4 {
   list-style-type: none;
   padding-left: 0;
   margin: 2px 0;
-
 
   font-size: 12px;
   line-height: 26px;
@@ -122,11 +115,16 @@ h1, h2, h3, h4 {
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
-
 .nav-block {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .nav-block {
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
 }
 .nav-block.affix {
   background-color: rgba(27,62,111,.9);
@@ -154,11 +152,6 @@ h1, h2, h3, h4 {
     margin-left: 40px;
   }
 }
-/*set by default now and adjusted on higher resolutions
-  .collapse.in .main-nav > li > a {
-  padding: 10px 10px;
-  margin-left: 0;
-}*/
 .main-nav > li > a:hover,
 .main-nav > li > a:active,
 .main-nav > li > a:focus
@@ -172,15 +165,14 @@ h1, h2, h3, h4 {
   padding-bottom: 30px;
 }
 .site-heading__wrapper {
-  max-width: 720px;
   margin: 0 auto;
-  padding-top: 55px;
+  padding-top: 0;
 
   text-align: center;
 }
 .site-heading__main-heading {
-  font-size: 35px;
-  line-height: 43px;
+  font-size: 28px;
+  line-height: 1.4;
   font-weight: 400;
   letter-spacing: 0.025em;
   text-align: center;
@@ -188,7 +180,26 @@ h1, h2, h3, h4 {
 }
 .site-heading__text{
   margin-bottom: 25px;
+  line-height: 1.5;
 }
+
+@media (min-width: 768px) {
+  .site-heading__wrapper {
+    max-width: 720px;
+    padding-top: 55px;
+  }
+  .site-heading__main-heading {
+    font-size: 35px;
+    line-height: 43px;
+
+    margin-bottom: 25px;
+  }
+  .site-heading__text{
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
 .site-heading .logo-holder {
   display: inline-block;
   width: 86px;
@@ -205,14 +216,21 @@ h1, h2, h3, h4 {
   margin: 6px 0;
 }
 .upcoming-event__text {
-  font-size: 22px;
-  line-height: 35px;
-  margin-top: 6px;
-  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 27px;
 }
-.upcoming-event__right {
-  padding-top: 20px;
-  padding-bottom: 10px;
+
+@media (min-width: 768px) {
+  .upcoming-event__text {
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+  .upcoming-event__right {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 /* SECTION - FEATURED CASE */
@@ -222,31 +240,31 @@ h1, h2, h3, h4 {
   color: #1b3e6f;
 }
 .featured-case__heading {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 .featured-case__item {
-  min-height: 270px;
+  /*min-height: 270px;*/
   background: url('../img/bg-case-studies.png') top center no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
   margin-bottom: 10px;
 }
 .featured-case__item-top {
-  min-height: 170px;
+  /*min-height: 170px;*/
   padding: 10px;
   background-color: rgba(14,64,106,.7);
   color: #fff;
   text-align: center;
 }
 .featured-case__item-bottom {
-  min-height: 100px;
-  padding: 25px 20px;
+  /*min-height: 100px;*/
+  padding: 10px 20px;
   background-color: #ebebeb;
   color: #58595b;
   text-align: center;
 }
 .featured-case__item-heading {
-  margin-top: 2.5em;
+  margin-top: .5em;
   font-size: 22px;
   line-height: 27px;
   text-align: center;
@@ -257,6 +275,24 @@ h1, h2, h3, h4 {
   line-height: 27px;
   font-style: italic;
   color: #00b5e1;
+}
+@media (min-width: 768px) {
+  .featured-case__heading {
+    margin-bottom: 35px;
+  }
+  .featured-case__item {
+    min-height: 270px;
+  }
+  .featured-case__item-top {
+    min-height: 170px;
+  }
+  .featured-case__item-bottom {
+    min-height: 100px;
+    padding: 25px 20px;
+  }
+  .featured-case__item-heading {
+    margin-top: 2.5em;
+  }
 }
 
 /* SECTION - REVIEWS(???) */
@@ -359,8 +395,8 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.col-350 { /*helper to restrain width of contents*/
-  max-width: 350px;
+.col-390 { /*helper to restrain width of contents*/
+  max-width: 390px;
   margin: 0 auto;
 } 
 .services-item__wrapper {
@@ -478,10 +514,28 @@ h1, h2, h3, h4 {
   visibility: visible;
   opacity: 1;
 }
+@media (max-width: 400px) {
+  .services-item__overlay {
+    padding: 120px 5px;
+    background-position: center 30px;
+  }
+  .services-item__heading {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 998px) and (max-width: 1199px) {
+  .services-item__overlay {
+    padding: 120px 5px;
+    background-position: center 30px;
+  }
+  .services-item__heading {
+    margin-bottom: 20px;
+  }
+}
 
 /* SECTION - BLOG */
 .blog {
-  padding: 50px 0;
+  padding: 50px 0 30px;
 
   background-color: #0e406a;
   background-image: url('../img/blog-bg.jpg');
@@ -495,6 +549,9 @@ h1, h2, h3, h4 {
   margin: 10px 0 30px;
 
   text-align: center;
+}
+.blog-article {
+  margin-bottom: 20px;
 }
 .blog-article__fulldate {
   margin: 4px 0 0; /*to compensate heading's line height*/
@@ -522,6 +579,13 @@ h1, h2, h3, h4 {
 
   padding-top: 10px;
 }
+@media (max-width: 767px) {
+  .blog-article__fulldate {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
 .blog-article__heading {
   margin: 0 0 15px;
 
@@ -542,10 +606,13 @@ h1, h2, h3, h4 {
 
 /* SECTION - MEDIA */
 .media-block {
-  padding: 50px 0;
+  padding: 50px 0 30px;
 
   background-color: #fff;
   color: #58595b;
+}
+.media-type {
+  margin-bottom: 20px;
 }
 .media-type__heading {
   margin: 3px 0 25px;
@@ -553,7 +620,7 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 .media-type__item-heading {
-  margin: 0 0 15px;
+  margin-bottom: 15px;
 
   font-size: 22px;
   line-height: 27px;
@@ -569,6 +636,13 @@ h1, h2, h3, h4 {
   line-height: 27px;
   font-style: italic;
   color: #00b5e1;
+}
+.media-type__image {
+  max-width: 192px;
+  margin-bottom: 20px;
+}
+.media-type__image--2 {
+  max-width: 194px;
 }
 
 /* FOOTER */
